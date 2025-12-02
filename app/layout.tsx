@@ -153,8 +153,13 @@ export default function RootLayout({
         </footer>
 
         {/* Sticky mobile CTA */}
-        <div className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:hidden">
-          <a href={siteConfig.booksy} className="btn-primary shadow-2xl" target="_blank" rel="noopener">
+        <div className="fixed bottom-4 left-0 right-0 z-50 px-4 md:hidden">
+          <a 
+            href={siteConfig.booksy} 
+            className="block w-full rounded-full bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-4 text-center text-base font-semibold text-white shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 hover:scale-105" 
+            target="_blank" 
+            rel="noopener"
+          >
             📱 Umów wizytę
           </a>
         </div>
